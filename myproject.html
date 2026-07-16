@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <img width="1450px" height="600px" src="logo1.jpg" alt="">
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        background: image(b);
+      }
+      .header{
+        padding: 30px;
+        text-align: center;
+        background: c c html 1px;;
+      }
+      .header h1{
+        font-size: 50px;
+      }
+      .topnav{
+        overflow: hidden;
+        background-color: #333;
+      }
+      .topnav a{
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .topnav a:hover{
+        background-color:white;
+        color: red;
+      }
+      .leftcolumn{
+        float: left;
+        width: 75%;
+        background-image: url(ring3.jpg);
+      }
+      .rightcolumn{
+        width: 25%;
+        float: left;
+        background-image: url(back.jpg);
+        padding-left: 20px;
+
+      }
+      .fakeimg{
+        background-image: url(left.jpg);
+        width: 100%;
+        padding: 20px;
+        }
+      .card{
+       background-image: url(left.jpg);
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .card1{
+        background-image: url(ring3.jpg);
+      }
+      .card3{
+        height: 1355px;;
+      }
+      .row::after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .footer{
+        padding: 100px;
+        text-align: center;
+        background-color: white;
+        margin-top: 20px;
+      }
+      /* responsive layout - when the screen is less than 800px wide, make the two colimns stack on top of each other instead of next to each other*/
+      @media screen and (max-width:800px){
+        .leftcolumn, .rightcolumn{
+          width: 100%;
+          padding: 0;
+      }
+      }
+      /*responsive layout - when the screen is less than 400px wide, make the navigative links stack on top of each other instead of next to each*/
+      @media screen and (max-width:400px){
+        .topnav a{
+          float: none;
+          width: 100%;
+        }
+      }
+      .gallery{
+        display: flex;
+        width: 1200px;
+        gap: 5px;
+      }
+      .gallery img{
+        height: 250px;
+        flex: 1;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        transition: o.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+      }
+      .gallery img:hover{
+        flex: 4;
+      }
+    </style>
+</head>
+<body>
+      
+      <div class="topnav">
+        <a href="#">Home</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="image_slider.html">Menu</a>
+        <a href="form2.html" style="float:right">Log In</a>
+        <a href="#" style="float:right">Log Out</a>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Ruby...</h2>
+            <h5>In 2024,We launched a jewellery shop targeting the wedding segment and served a perfect jewel as per your wish .</h5>
+            <div class="fakeimg" style="height:500px;">
+              <img width="100%" height="100%" src="ruby2.jpg" alt="">
+            </div>
+            <p>Ruby...</p>
+            <p>Diamond's 4 Diamond is perfect blend of timeless elegance and modern sophistication. Wedding jewellery range to honor your heritage and add to the grace of your celebrations.</p>
+            <img width="97%" height="60%" src="html1.jpg" alt="">
+          </div>
+          <div class="card">
+            <h2>Gold...</h2>
+            <h5>,Diamond's 4 Diamond serve you a very good quality jewel like Golds,Rubies,Diaomnd and Silver.</h5>
+            <img width="97%" height="60%" src="j.jpg" alt="">
+            <div class="fakeimg" style="height:200px;"><img width="30%" height="100%" src="html2.jpg" alt="">
+            <img width="30%" height="100%" src="html3.jpg" alt=""> 
+            <img width="30%" height="100%" src="html4.jpg" alt=""></div>
+            <p>Customers review...</p>
+           <p>We all beloved our Diamond's 4 Diamond because they served we a good jewellery as we can.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card 1">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height:100px;"><img width="100%" height="90px" src="a3.jpg" alt=""></div>
+            <p>we get 22 carat gold and Diamond to our diamond's like customers.</p>
+          </div>
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="fakeimg"><p><img width="100%" height="150px" src="ring.jpg" alt=""></p></div>
+            <div class="fakeimg"><p><img width="100%" height="150px" src="html5.jpg" alt=""></p></div>
+            <div class="fakeimg"><p><img width="100%" height="150px" src="ruby.jpg" alt=""></p></div>
+          </div> 
+          <div class="card3">
+            <h3>Offers</h3>
+            <img width="95%" height="200px" src="h1.jpg" alt="">
+            <img width="95%" height="200px" src="h2.jpg" alt="">
+            <img width="95%" height="200px" src="h3.jpg" alt="">
+            <img width="95%" height="200px" src="h4.jpg" alt="">
+            <img width="95%" height="200px" src="h5.jpg" alt="">
+            <p>Special offer to our customers buy two jewellery and get 15% off and a gift hamper .</p>
+            <img width="95%" height="150px" src="gift.jpg" alt="">
+            <p>This offer is limitted so don't be late, Shop now</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h2>...New Collections...</h2>
+        <section>
+          <div class="gallery">
+            <img src="f1.jpg" alt="">
+            <img src="a2.jpg" alt="">
+            <img src="a4.jpg" alt="">
+            <img src="a5.jpg" alt="">
+            <img src="a6.jpg" alt="">
+            <img src="f2.jpg" alt="">
+            <img src="f3.jpg" alt="">
+            <img src="f4.jpg" alt="">
+            <img src="f5.jpg" alt="">
+            <img src="f6.jpg" alt="">
+          </div>
+        </section>
+      </div>
+</body>
+</html> 
